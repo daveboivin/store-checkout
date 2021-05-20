@@ -1,10 +1,12 @@
-.content {
-  display: flex;
-  /*align-items: flex-end;*/
+
+h1 {
+  text-align: center
 }
 
-app-checkout {
-  /*margin-left: auto;*/
+.content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
