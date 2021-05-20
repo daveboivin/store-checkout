@@ -1,23 +1,18 @@
 <div class="storeItem" *ngIf="storeItem">
   <h4>Store Item</h4>
   <div>
-    <label for="store-item-name">name: </label>
-    <input id="store-item-name" [(ngModel)]="storeItem.name"/>
+    name: {{storeItem.name}}
   </div>
   <div>
-    <label for="store-item-price">price: </label>
-    <input id="store-item-price" [(ngModel)]="storeItem.price"/>
+    quantity: {{storeItem.quantity}}
   </div>
   <div>
-    <label for="store-item-quantity">quantity: </label>
-    <input id="store-item-quantity" [(ngModel)]="storeItem.quantity"/>
+    price: {{storeItem.price}}
   </div>
   <div>
-    <label for="store-item-isBasicSalesTaxExempt">isBasicSalesTaxExempt: </label>
-    <input id="store-item-isBasicSalesTaxExempt" [(ngModel)]="storeItem.isBasicSalesTaxExempt"/>
+    basic sales tax exempt: {{storeItem.isBasicSalesTaxExempt}}
   </div>
   <div>
-    <label for="store-item-isImported">isImported: </label>
-    <input id="store-item-isImported" [(ngModel)]="storeItem.isImported"/>
+    imported: {{storeItem.isImported}}
   </div>
 </div>

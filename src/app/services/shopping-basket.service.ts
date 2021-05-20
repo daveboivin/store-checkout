@@ -41,7 +41,7 @@ export class ShoppingBasketService {
 
   getShoppingBaskets(): Observable<ShoppingBasket[]> {
 
-    // replace with API Call
+    // replace with API call
 
     return new Observable<ShoppingBasket[]>(observer => {
       observer.next(this.shoppingBaskets);

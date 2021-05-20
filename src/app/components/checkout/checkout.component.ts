@@ -24,11 +24,13 @@ export class CheckoutComponent implements OnInit {
 
   checkout(): void {
 
-    this.shoppingBaskets.forEach((shoppingBasket) => {
-      this.receipts.push(this.checkoutService.calculateReceipt(shoppingBasket));
-    });
+    if (!this.checkoutComplete) {
+      this.shoppingBaskets.forEach((shoppingBasket) => {
+        this.receipts.push(this.checkoutService.calculateReceipt(shoppingBasket));
+      });
 
-    this.checkoutComplete = true;
+      this.checkoutComplete = true;
+    }
   }
 
 }
