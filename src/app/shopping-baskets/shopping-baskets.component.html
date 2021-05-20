@@ -1,0 +1,6 @@
+<div *ngFor="let shoppingBasket of shoppingBaskets; index as i">
+  <h2>Shopping Basket {{i + 1}}</h2>
+  <app-store-item *ngFor="let storeItem of shoppingBasket.storeItems"
+                  [storeItem]="storeItem">
+  </app-store-item>
+</div>
