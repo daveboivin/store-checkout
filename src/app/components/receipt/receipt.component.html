@@ -1,0 +1,11 @@
+<div class="receipt" *ngIf="receipt">
+  <div *ngFor="let receiptItem of receipt.receiptItems; index as i">
+    {{receiptItem.quantity}} {{receiptItem.name}}: {{receiptItem.totalCost.toFixed(2)}}
+  </div>
+  <div>
+    Sales Tax: {{receipt.totalSalesTax.toFixed(2)}}
+  </div>
+  <div>
+    Total: {{receipt.totalCost.toFixed(2)}}
+  </div>
+</div>

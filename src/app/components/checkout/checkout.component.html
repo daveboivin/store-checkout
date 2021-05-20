@@ -1,0 +1,10 @@
+<h2>Checkout</h2>
+<button class="checkout-button" (click)="checkout()">
+  Click here to checkout
+</button>
+<div  class="content" *ngIf="checkoutComplete">
+  <div *ngFor="let receipt of receipts; index as i">
+    <h3>Receipt {{i + 1}}</h3>
+    <app-receipt [receipt]="receipt"></app-receipt>
+  </div>
+</div>

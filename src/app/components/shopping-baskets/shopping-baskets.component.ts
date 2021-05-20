@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ShoppingBasket} from "../shopping-basket";
-import {ShoppingBasketService} from "../shopping-basket.service";
+import {ShoppingBasket} from "../../models/shopping-basket";
+import {ShoppingBasketService} from "../../services/shopping-basket.service";
 
 @Component({
   selector: 'app-shopping-baskets',
