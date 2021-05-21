@@ -61,11 +61,10 @@ export class CheckoutService {
 
   // return number rounded to nearest multiple of $0.05
   roundSalesTax(number: number): number {
-    // return Math.round(number * 100) / 100;
-
     return Math.ceil(number*20)/20;
   }
 
+  // return the number rounded to two decimal places
   roundTotal(number: number): number {
     return Math.round(number * 100) / 100;
   }
